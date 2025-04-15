@@ -7,7 +7,6 @@ CREATE TABLE IF NOT EXISTS accounts(
   picture VARCHAR(255) COMMENT 'User Picture'
 ) default charset utf8mb4 COMMENT '';
 
-
 CREATE TABLE chores(
 
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -26,4 +25,3 @@ SELECT * FROM chores;
 
 SELECT * FROM chores WHERE id = 2;
 
-DROP TABLE chores;
