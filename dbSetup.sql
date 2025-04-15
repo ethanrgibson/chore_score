@@ -20,7 +20,7 @@ is_complete BOOLEAN DEFAULT false
 
 INSERT INTO 
 chores(name, description, is_complete)
-VALUES ("Operation: HyperDrive", "Code like no one done coded before", false);
+VALUES ("Create New Chore", "Write code to create new chore", true);
 
 SELECT * FROM chores;
 

@@ -1,5 +1,6 @@
 
 
+
 namespace chore_score.Services;
 
 public class ChoresService
@@ -22,6 +23,12 @@ public class ChoresService
   public Chore GetChoreById(int choreId)
   {
     Chore chore = _repository.GetChoreById(choreId);
+    return chore;
+  }
+
+  public Chore CreateChore(Chore choreData)
+  {
+    Chore chore = _repository.CreateChore(choreData);
     return chore;
   }
 }
