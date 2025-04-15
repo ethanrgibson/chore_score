@@ -6,18 +6,23 @@ namespace chore_score.Controllers;
 public class ChoresController : ControllerBase
 {
 
-private readonly ChoresService _choresService;
+  private readonly ChoresService _choresService;
 
-public ChoresController(ChoresService choresService){
+  public ChoresController(ChoresService choresService)
+  {
 
-_choresService = choresService;
+    _choresService = choresService;
 
-}
+  }
 
 
 
-[HttpGet]
-public ActionResult<List<Chore>> GetAllChores(){ return []}
+  [HttpGet]
+  public ActionResult<List<Chore>> GetAllChores()
+  {
+
+    return "";
+  }
 
 
 }
