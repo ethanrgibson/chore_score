@@ -64,7 +64,7 @@ public class ChoresController : ControllerBase
     catch (Exception error)
     {
 
-      return BadRequest(error.Message);
+      return BadRequest(error.Message); 
     }
 
   }
