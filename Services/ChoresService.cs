@@ -1,4 +1,4 @@
 namespace chore_score.Services;
 
-public class ChoreService{}
+public class ChoresService{}
   
