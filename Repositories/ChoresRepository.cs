@@ -1,4 +1,5 @@
 
+
 namespace chore_score.Repositories;
 
 public class ChoresRepository
@@ -18,5 +19,14 @@ public class ChoresRepository
     List<Chore> chores = _db.Query<Chore>(sql).ToList();
 
     return chores;
+  }
+
+  public Chore GetChoreById(int choreId)
+  {
+    string sql = @"SELECT id FROM chores WHERE id = @choreId;";
+
+    Chore chore = _db.Query<Chore>(sql, new{choreId}).SingleOrDefault();
+
+    return chore;
   }
 }
