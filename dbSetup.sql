@@ -24,6 +24,6 @@ VALUES ("Operation: HyperDrive", "Code like no one done coded before", false);
 
 SELECT * FROM chores;
 
-SELECT id FROM chores WHERE id = 2;
+SELECT * FROM chores WHERE id = 2;
 
 DROP TABLE chores;

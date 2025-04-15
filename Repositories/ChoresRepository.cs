@@ -23,7 +23,7 @@ public class ChoresRepository
 
   public Chore GetChoreById(int choreId)
   {
-    string sql = @"SELECT id FROM chores WHERE id = @choreId;";
+    string sql = @"SELECT * FROM chores WHERE id = @choreId;";
 
     Chore chore = _db.Query<Chore>(sql, new{choreId}).SingleOrDefault();
 
