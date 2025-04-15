@@ -13,15 +13,17 @@ CREATE TABLE chores(
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(255) NOT NULL,
 description VARCHAR(255),
-isComplete BOOLEAN DEFAULT false
+is_complete BOOLEAN DEFAULT false
 
 
 );
 
 INSERT INTO 
-chores(name, description)
-VALUES ("Operation: HyperDrive", "Code like no one has ever coded before.");
+chores(name, description, is_complete)
+VALUES ("Operation: HyperDrive", "Code like no one done coded before", false);
 
-SELECT * FROM chores
+SELECT * FROM chores;
 
-SELECT id FROM chores WHERE id = 2
+SELECT id FROM chores WHERE id = 2;
+
+DROP TABLE chores;
