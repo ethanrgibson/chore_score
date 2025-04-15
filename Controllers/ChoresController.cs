@@ -21,7 +21,7 @@ public class ChoresController : ControllerBase
   public ActionResult<List<Chore>> GetAllChores()
   {
 
-    return "";
+    return [];
   }
 
 
